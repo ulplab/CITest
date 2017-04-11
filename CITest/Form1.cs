@@ -32,7 +32,7 @@ namespace CITest
                     Thread.Sleep(200);
                 }
             });
-            t.Start() //sin punto y coma para que falle el build en travis ci
+            t.Start();
         }
     }
 }
