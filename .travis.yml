@@ -1,7 +1,7 @@
 language: csharp
 install:
   - nuget restore CITest.sln
-  - nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
+  - nuget install NUnit.Console -Version 3.6.1 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release CITest.sln
-  - mono ./testrunner/NUnit.Runners.3.6.1/tools/nunit-console.exe ./CITest.Tests1/bin/Release/CITest.Tests1.dll
+  - mono ./testrunner/NUnit.Console.3.6.1/tools/nunit-console.exe ./CITest.Tests1/bin/Release/CITest.Tests1.dll
