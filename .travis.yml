@@ -5,3 +5,5 @@ install:
 script:
   - xbuild /p:Configuration=Release CITest.sln
   - mono ./testrunner/NUnit.ConsoleRunner.3.6.1/tools/nunit3-console.exe ./CITest.Tests1/bin/Release/CITest.Tests1.dll
+after_failure:
+	- cat ./TestResult.xml
