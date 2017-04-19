@@ -14,8 +14,8 @@ namespace CITest.Tests1
         public void TestMethod()
         {
             // TODO: Add your test code here
-            //Assert.Pass("Your first passing test");
-            Assert.Fail("Fail test with assert.fail");
+            Assert.Pass("Your first passing test");
+           
         }
     }
 }
