@@ -4,4 +4,4 @@ before_build:
 build:
   verbosity: minimal
 test_script:
-- ps: nunit3-console --x86 NUnitTests\bin\Debug\NUnitTests.dll
+- ps: nunit3-console --x86 CITest.Tests1\bin\Debug\CITest.Tests1.dll
